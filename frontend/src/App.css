@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vh;
+}
+.App {
+  width: 75vw;
+  background-color: aliceblue;
+  padding: 1rem;
+  min-height: 100vh;
+}
+.App h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+h1 {
+  font-family: "Quicksand", serif;
+}
+
+.post-container {
+  display: flex;
+  gap: 1rem;
+}
+.post-form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem;
+  min-width: 30%;
+  gap: 1rem;
+  padding-bottom: 5rem;
+  align-self: flex-start;
+}
+label,
+input {
+  display: block;
+}
+label {
+  font-size: 1rem;
+}
+
+input {
+  border: 0px;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  width: 100%;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+button {
+  cursor: pointer;
+}
+.submit {
+  padding: 0.25rem 2rem;
+  border-radius: 20px;
+}
+.reset {
+  border: 0px;
+  background-color: transparent;
+}
+
+.article {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  padding: 1rem;
+  gap: 1rem;
+}
+.article-description,
+.delete-button {
+  justify-self: start;
+  align-self: flex-end;
+}
+.delete-button {
+  padding: 0.25rem 2rem;
+  border: 0px;
+  border-bottom: 2px solid red;
+  background-color: transparent;
+}
+
+.articles-container {
+  flex-grow: 1;
+}
