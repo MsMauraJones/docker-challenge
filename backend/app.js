@@ -1,6 +1,13 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const path = require('path');
+
+require ('dotenv').config({
+    path: path.resolve(__dirname, './.env')
+})
+
+console.log('env variable for db connection: ', process.env.DB_CONNECTION)
 
 const connected = require("./connection.js");
 

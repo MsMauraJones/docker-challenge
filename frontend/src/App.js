@@ -7,7 +7,7 @@ function App() {
   const [update, setUpdate] = useState();
   return (
     <div className="App">
-      <h1>The Photo of the Day</h1>
+      <h1>{process.env.REACT_APP_TITLE}</h1>
       <div className="post-container">
         <PostForm update={update} setUpdate={setUpdate} />
         <PostList update={update} setUpdate={setUpdate} />
