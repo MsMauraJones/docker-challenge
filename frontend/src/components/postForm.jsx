@@ -9,7 +9,7 @@ const PostForm = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:4000/api/posts", formData)
+      .post("http://167.114.138.181:4000/api/posts", formData)
       .then((res) => {
         props.setUpdate(res);
         reset();

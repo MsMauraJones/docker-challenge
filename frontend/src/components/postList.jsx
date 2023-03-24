@@ -6,7 +6,7 @@ const PostList = (props) => {
   useEffect(() => {
     (() => {
       axios
-        .get("http://localhost:4000/api/posts")
+        .get("http://167.114.138.181:4000/api/posts")
         .then((res) => {
           if (res.data) {
             setPosts(res.data);
@@ -18,7 +18,7 @@ const PostList = (props) => {
 
   const handleDelete = (e, id) => {
     e.preventDefault();
-    axios.delete(`http://localhost:4000/api/posts/${id}`).then((res) => {
+    axios.delete(`http://167.114.138.181:4000/api/posts/${id}`).then((res) => {
       props.setUpdate(res);
     });
   };
